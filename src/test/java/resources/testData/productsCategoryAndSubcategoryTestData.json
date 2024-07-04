@@ -1,0 +1,12 @@
+{
+  "Category" : {
+    "WomenCategory" : "Women",
+    "MenCategory" : "Men"
+  },
+  "SubCategories" : {
+    "WomenSubCategory" : "Dress",
+    "MenSubCategory" : "Tshirts"
+  },
+  "WomanCategoryPageTitle" : "WOMEN - DRESS PRODUCTS",
+  "NavigatedManCategoryPage" : "Men > Tshirts"
+}

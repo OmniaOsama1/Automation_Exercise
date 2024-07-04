@@ -1,0 +1,14 @@
+{
+"firstProduct": {
+  "productName" : "Blue Top",
+  "productPrice" : "Rs. 500",
+ "productQuantity" : "1",
+  "totalPrice": "Rs. 500"
+},
+  "secondProduct": {
+    "productName" : "Men Tshirt",
+    "productPrice" : "Rs. 400",
+    "productQuantity" : "1",
+    "totalPrice": "Rs. 400"
+  }
+}

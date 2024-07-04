@@ -11,7 +11,7 @@ public class CreateAccountPage {
     private final By dateOfBirth_Day=By.id("days");
     private final By dateOfBirth_Month=By.id("months");
     private final By dateOfBirth_Year=By.id("years");
-    private final By newSletter=By.id("newsletter");
+    private final By newsLetter=By.id("newsletter");
     private final By specialOffers=By.id("optin");
     private final By firstName=By.id("first_name");
     private final By lastName=By.id("last_name");
@@ -25,7 +25,7 @@ public class CreateAccountPage {
     private final By mobileNumber=By.id("mobile_number");
     private final By createAccountButton=By.cssSelector("[data-qa='create-account']");
     private final By createdAccountMessage=By.cssSelector("[class*= 'title text-center']");
-    private final By contineButton=By.cssSelector("[class*= 'btn btn-primary']");
+    private final By continueButton=By.cssSelector("[class*= 'btn btn-primary']");
     private By gender(String gender){
         return By.xpath("//input [@value='"+gender+"']");
     }
@@ -44,7 +44,7 @@ public class CreateAccountPage {
         select(driver.findElement(dateOfBirth_Day)).selectByVisibleText("11");
         select(driver.findElement(dateOfBirth_Month)).selectByVisibleText("September");
         select(driver.findElement(dateOfBirth_Year)).selectByVisibleText("1995");
-        driver.findElement(newSletter).click();
+        driver.findElement(newsLetter).click();
         driver.findElement(specialOffers).click();
         driver.findElement(firstName).sendKeys(FirstName);
         driver.findElement(lastName).sendKeys(LastName);
@@ -64,7 +64,7 @@ public class CreateAccountPage {
         return driver.findElement(createdAccountMessage).isDisplayed();
     }
     public void clickContinueButton(){
-        driver.findElement(contineButton).click();
+        driver.findElement(continueButton).click();
     }
 
 }
